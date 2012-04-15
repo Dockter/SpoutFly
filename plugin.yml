@@ -1,0 +1,52 @@
+name: spoutfly
+main: net.Dockter.SpoutFly.SpoutFly
+version: 1.0
+commands:
+  spoutfly:
+    description: spoutfly command.
+    aliases: fly
+    usage: /spoutfly [command] [arg]
+permissions:
+  spoutfly.admin:
+    description: Allows use of all spoutfly commands.
+    children:
+      spoutfly.help: true
+      spoutfly.toggle: true
+      spoutfly.toggle.other: true
+      spoutfly.on: true
+      spoutfly.on.other: true
+      spoutfly.off: true
+      spoutfly.off.other: true
+      spoutfly.check: true
+      spoutfly.check.other: true
+      spoutfly.list: true
+  spoutfly.help:
+    description: Allows use of the help command.
+    default: op
+  spoutfly.toggle:
+    description: Allows use of the toggle command.
+    default: op
+  spoutfly.toggle.other:
+    description: Allows use of the toggle command on other players.
+    default: op
+  spoutfly.on:
+    description: Allows use of the on command.
+    default: op
+  spoutfly.on.other:
+    description: Allows use of the on command on other players..
+    default: op
+  spoutfly.off:
+    description: Allows use of the oh command.
+    default: op
+  spoutfly.off.other:
+    description: Allows use of the off command on other players.
+    default: op
+  spoutfly.check:
+    description: Allows use of the check command.
+    default: op
+  spoutfly.check.other:
+    description: Allows use of the check command on other players.
+    default: op
+  spoutfly.list:
+    description: Allows use of the list command.
+    default: op
